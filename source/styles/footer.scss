@@ -1,0 +1,154 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	height: 225px;
+	padding-bottom: 36px;
+	padding-top: 36px;
+	justify-content: space-between;
+	font-family: $solomonregular-font;
+	margin-bottom: 25px;
+}
+
+.footer__firm {
+	font-family: $alumna-font;
+	font-size: 32px;
+	letter-spacing: 1px;
+	align-items: flex-start;
+}
+.footer__text {
+	font-family: $alumna-font;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-left: 6px;
+	margin-bottom: 42px;
+}
+.footer__logo {
+	display: flex;
+	flex-direction: column;
+	color: black;
+}
+.footer__logo i {
+	margin-bottom: 13px;
+}
+.footer__logo i a  {
+	margin-left: 3px;
+	font-size: 12px;
+	color: black;
+}
+.footer__logo a  {
+	color: black;
+	font-size: 12px;
+}
+
+.footer__clients  {
+	font-weight: 500;
+	color: black;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 30px;
+}
+.footer__clients li  {
+	margin-top: 9px;
+}
+.footer__clients a  {
+	font-size: 12px;
+	color: #969696;
+	&:hover {
+		color: black;
+	}
+}
+.footer__address   {
+	padding-left: 30px;
+	font-weight: 500;
+	color: black;
+	font-size: 16px;
+	text-align: left;
+}
+.footer__address2 { // list connection for media queries 
+	display: none;
+	padding-left: 30px;
+	font-weight: 500;
+	color: black;
+	font-size: 16px;
+	text-align: left;
+}
+.footer__address  ul {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+}
+.footer__address2  ul { // media queries 
+	grid-template: 1fr / 1fr;
+}
+.footer__address li, .footer__address2 li {  
+	line-height: 24px;
+	font-size: 12px;
+	color: #969696;
+	margin-right: 40px;
+	margin-bottom: 22px;
+	margin-top: 6px;
+}
+.footer__map {
+	max-width: 250px;
+	font-weight: 500;
+	color: black;
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 20px;
+
+}
+#footer__input {
+	width: 255px;
+	height: 40px;
+	font-size: 14px;
+	margin-top: 20px;
+	color: black;
+	background-color: #FBFBFB;
+}
+
+.footer__map li {
+	font-size: 12px;
+	color: #969696;
+	margin-top: 8px;
+
+}
+.foother__mailing {
+	font-size: 10px;
+	color: #969696;
+	margin-bottom: 30px;
+	line-height: 16px;
+}
+
+.footer__soc {
+	font-size: 12px;
+	color: black;
+	line-height: 24px;
+}
+
+// media queries Footer Logo
+
+@media (max-width: 991px) {
+	.footer__map {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer__address {
+		display: none;
+	}
+	.footer__address2 {
+		display: block;
+	}
+	.footer {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 530px) {
+	.footer__address2 {
+		display: none;
+	}
+	.footer__clients {
+		margin-top: 5px;
+	}
+}

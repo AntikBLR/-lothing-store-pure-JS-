@@ -1,0 +1,444 @@
+header {
+	font-family: $solomonregular-font;
+	font-style: normal;
+}
+
+// top of the menu 
+.header__backgroung {
+	background-color: #FBFBFB;
+}
+
+.header__info {
+	height: 34px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #969696;
+}
+
+.header__info__left ul {
+	color: #969696;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 10px;
+}
+
+.header__info__left ul a {
+	font-family: $solomonregular-font;
+	line-height: 15px;
+	color: #969696;
+
+	&:hover {
+		color: black;
+	}
+}
+
+.header__info__link {
+	margin-right: 20px;
+}
+
+.header__info__right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__info__icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		color: black;
+	}
+}
+
+.header__info__icon2 {
+	display: none;
+}
+
+.header__info__icon i {
+	margin-right: 24px;
+	color: #969696;
+	font-size: 12px;
+}
+
+.header__info__icon i a {
+	font-family: $solomonregular-font;
+	margin-left: 5px;
+	color: #969696;
+	font-size: 11px;
+}
+
+.header__info__icon a {
+	font-family: $solomonregular-font;
+	margin-right: 20px;
+	color: #969696;
+	font-size: 11px;
+	&:hover {
+		color: black;
+	}
+}
+
+// Header icon (burger)
+.header__info__icon2 {
+	display: none;
+}
+
+.header__info__icon2 i {
+	margin-right: 24px;
+	color: #969696;
+	font-size: 12px;
+}
+
+.header__info__icon2 i a {
+	font-family: $solomonregular-font;
+	margin-left: 5px;
+	color: #969696;
+	font-size: 11px;
+}
+
+.header__info__icon2 a {
+	font-family: $solomonregular-font;
+	margin-right: 20px;
+	color: #969696;
+	font-size: 11px;
+
+	&:hover {
+		color: black;
+	}
+}
+
+// Burger Menu // 
+.header__burger {
+	display: none;
+}
+
+.header__x {
+	display: flex;
+	position: fixed;
+	z-index: 5;
+	color: white;
+	top: 2px;
+	font-size: 30px;
+	padding: 30px;
+	left: -100%;
+	&:hover {
+		color: rgb(0, 200, 250);
+	}
+}
+
+.header__burger__link {
+	overflow: visible;
+	font-family: $alumna-font;
+	display: flex;
+	width: 100%;
+	height: 200%;
+	position: fixed;
+	background-color: #1f1e1e;
+	z-index: 3;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	left: -100%;
+}
+
+.header__burger__link ul {
+	text-align: center;
+	margin-top: 230px;
+}
+
+.header__burger__menu {
+	margin-bottom: 40px;
+	font-size: 20px;
+	line-height: 25px;
+	color: white;
+	&:hover {
+		color: rgb(0, 200, 250);
+	}
+}
+
+// bottom of the menu 
+.header__menu {
+	height: 75px;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	align-items: center;
+	color: #969696;
+}
+
+.header__menu__left ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__menu__left2 { // hidden burger menu 
+	display: none;
+}
+
+.header__menu__link {
+	font-family: $solomonregular-font;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	color: black;
+	margin-right: 30px;
+	&:hover {
+		border-bottom: 1px solid black;
+	}
+}
+
+.header__menu__logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.header__firm {
+	font-family: $alumna-font;
+	font-size: 36px;
+	letter-spacing: 4px;
+}
+
+.header__text2 {
+	font-family: $alumna-font;
+	font-size: 13px;
+	letter-spacing: 3px;
+	color: black;
+}
+
+.header__menu__right {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 10px;
+}
+
+.header__menu__right2 { // hidden burger menu 
+	display: none;
+}
+
+.header__menu__right i {
+	position: relative;
+	font-size: 13px;
+	color: black;
+	margin-right: 55px;
+}
+
+.header__basket {
+	display: none;
+	position: absolute;
+	left: 8px;
+	bottom: 10px;
+	text-align: center;
+	justify-content: center;
+	color: black;
+	font-size: 15px;
+	width: 20px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: rgb(170, 223, 236);
+}
+
+// media queries Header 
+
+@media (max-width: 991px) {
+
+	.header__menu__left {
+		display: none;
+	}
+
+	.header__menu__right {
+		display: none;
+	}
+
+	.header__info__left {
+		display: none;
+	}
+
+	.header__menu__left2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		font-size: 10px;
+	}
+
+	.header__menu__left2 a {
+		font-size: 13px;
+		color: black;
+		margin-left: 55px;
+	}
+
+	.header__menu__right2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 10px;
+	}
+
+	.header__menu__right2 a {
+		font-size: 13px;
+		color: black;
+		margin-right: 55px;
+	}
+
+	// Burger icon // 
+
+	.header__burger {
+		display: block;
+		position: relative;
+		top: 3px;
+		color: white;
+		width: 30px;
+		height: 20px;
+		z-index: 2;
+		margin-left: 15px;
+		transition: transform 0.3s;
+		&:hover {
+			transform: rotate(180deg);
+		}
+	}
+
+	.header__burger span {
+		position: absolute;
+		top: 9px;
+		width: 100%;
+		height: 2px;
+		background-color: black;
+		left: 0px;
+		z-index: 99;
+	}
+
+	.header__burger:before {
+		content: "";
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 0;
+	}
+
+	.header__burger:after {
+		content: "";
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.header__info__icon {
+		display: none;
+	}
+	.header__info__icon2 {
+		display: flex;
+	}
+	.header__menu__left2 a {
+		margin-left: 30px;
+	}
+	.header__menu__right2 a {
+		margin-right: 30px;
+	}
+}
+
+
+// Header Logo (circle)
+
+.header__logo {
+	font-family: $alumna-font;
+	height: 80vh;
+	width: 100vw;
+	text-align: center;
+	margin: 0 auto;
+	background-position: top;
+	background-image: url('../img/Rectangle\ 2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.header__tagline {
+	font-family: $alumna-font;
+	color: white;
+	font-size: 50px;
+	line-height: 51px;
+}
+
+.header__text {
+	font-family: $alumna-font;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+}
+
+.header__scrolling {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+
+}
+
+.header__circle {
+	display: flex;
+	border: 2px solid white;
+	justify-content: center;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	color: #DDE0E4;
+	margin: 0px 0px 0px 12px;
+
+	&:hover {
+		background-color: black;
+	}
+}
+
+.header__circle__activ {
+	background-color: rgb(132, 133, 138);
+}
+
+// media queries Header Logo
+
+@media (max-width: 991px) {
+	.header__tagline {
+		font-size: 40px;
+		line-height: 41px;
+	}
+	.header__text {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 576px) {
+	.header__tagline {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	.header__text {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}

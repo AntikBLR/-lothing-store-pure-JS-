@@ -1,0 +1,35 @@
+include components/mixins
+include components/doctype
+
+.entrance 
+	.entrance__firm Bordo
+	.entrance__text showroom
+.entrance__registration
+	i(class="fa fa-check fa-3x")
+	.entrance Регистрация завершена
+	p Пожалуйста, проверьте почту или СМС сообщения на телефоне
+	a(href="#").registration__button Войдите под своим email
+form(onsubmit="return false")
+	input(checked="" id="signin" class="entrance__activ" name="action" type="radio" value="signin")
+	label(for="signin") Войти
+	input( id="signup" class="entrance__activ" name="action" type="radio" value="signup")
+	label(for="signup") Регистрация
+	input( id="reset" class="entrance__activ" name="action" type="radio" value="reset")
+	label(for="reset"  id="reset2") Сброс
+	#wrapper
+		#arrow
+		input(id="email" placeholder="Email" type="text" required)
+		input(id="pass" placeholder="Password" type="password" required)
+		input(id="repass" placeholder="Repeat password" type="password" required)
+	button(type="submit" disabled).entrance__button
+		span Сброс пароля 
+			br
+			| Войти
+			br
+			| Регистрация
+
+#hint Нажимайте по вкладкам 
+
+script(src="js/header.js")
+script(src="js/entrance.js")
+script(src="js/cookie.js")

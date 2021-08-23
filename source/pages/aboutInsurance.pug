@@ -1,0 +1,27 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	.container
+		.insurance 
+			h2 Страхование
+			.insurance__info.company__important Уважаемые покупатели! 
+			.insurance__text Совместно с нашим партнером страховой компанией Белгосстрах мы предоставляем услуги 
+				| по заключению договоров страхования. Заключение договора страхования доступно при любых способах
+				| оплаты, кроме покупки в лизинг. Мы отвечаем за качество наших аксесуаров, одежды и обуви!
+			.insurance__block
+				i(class="fa fa-check-square-o fa-4x" aria-hidden="true")
+				.insurance__warranty 
+					h3 Мы гарантируем качество!
+					p В нашем онлайн-гипермаркете вы купите только сертифицированный товар по 
+						| выгодным ценам. К каждой покупке прилагается кассовый чек — ваша защита как потребителя. 
+
+	include footer 
+	script(src="js/cookie.js")
+	script(src="js/header.js")
+	script(src="js/script.js")
+	script(src="js/basket.js")

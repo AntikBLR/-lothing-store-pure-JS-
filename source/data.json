@@ -1,0 +1,49 @@
+{
+  "test": {
+    "id": "test-2",
+    "text": "text text text text text v text  texttext text text text"
+  },
+  "contacts": {
+    "tel": "+375 (25) 545 88 68",
+    "address": "г. Минск, ул. Тимирязева, 65 Б"
+  },
+  "menu": [
+    {
+      "label": "Программа",
+      "link": "#program"
+    },
+    {
+      "label": "Преподаватель",
+      "link": "#teacher"
+    },
+    {
+      "label": "Цена",
+      "link": "#price"
+    },
+    {
+      "label": "Отзывы",
+      "link": "#reviews"
+    },
+    {
+      "label": "Вопросы",
+      "link": "#questions"
+    }
+  ],
+  "images": [
+    {
+      "id": "1",
+      "name": "png"
+    },
+    {
+      "id": "2",
+      "name": "jpg"
+    },
+    {
+      "id": "3",
+      "name": "png"
+    }
+  ],
+  "imagesWithScr": [
+    "1.png", "2.jpg", "3.png"
+  ]
+}

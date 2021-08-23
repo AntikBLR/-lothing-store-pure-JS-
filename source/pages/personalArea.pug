@@ -1,0 +1,44 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	.container
+		.personal__logo Личный кабинет
+			.personal__area
+				.personal__box
+					i(class="fa fa-calendar" aria-hidden="true")
+					a(href="#") История заказов
+				.personal__box
+					i(class="fa fa-shopping-basket" aria-hidden="true")
+					a(href="#") Корзина
+				.personal__box
+					i(class="fa fa-user-o" aria-hidden="true")
+					a(href="#") Личные данные
+				.personal__box
+					i(class="fa fa-credit-card-alt" aria-hidden="true")
+					a(href="#") Личный счет
+				.personal__box
+					i(class="fa fa-calculator" aria-hidden="true")
+					a(href="#") Текущие заказы
+				.personal__box
+					i(class="fa fa-envelope" aria-hidden="true")
+					a(href="#") Уведомления
+				.personal__box
+					i(class="fa fa-share-square" aria-hidden="true")
+					a(href="#") Выход из профиля
+				.personal__box
+					i(class="fa fa-percent" aria-hidden="true")
+					a(href="#") Накопленые бонусы
+				.personal__box
+					i(class="fa fa-key" aria-hidden="true")
+					a(href="#") Смена пароля
+				.personal__box
+					i(class="fa fa-car" aria-hidden="true")
+					a(href="#") Служба доставки
+	include footer 
+	script(src="js/basket.js")
+	script(src="js/script.js")

@@ -1,0 +1,21 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	.container
+		button(id="checkout") Открыть список товаров
+		.product__content
+		button(id="product__clear") Очистить корзину
+		.backet__discount Промо код: 
+			input(id="backet__promo" placeholder="Введине бонус код" type="text")
+			button(class="backet__get") Применить
+		.basket__check
+		.basket__product
+		.basket__discount
+	include footer 
+	script(src="js/basket.js")
+	script(src="js/script.js")

@@ -1,0 +1,123 @@
+/// company information 
+
+.company h2 {
+	font-family: $alumna-font;
+	font-style: 900;
+	font-size: 32px;
+	line-height: 40px;
+	text-align: center;
+	color:black;
+} 
+.company i  {
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.company h3 {
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+.company__text {
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+.company__info {
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 20px;
+} 
+
+.company__important {
+	font-weight: 600;
+	color: rgb(211, 14, 14);
+}
+
+// insurance
+
+.insurance h2{
+	font-family: $alumna-font;
+	font-style: 900;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	color:black;
+	margin: 20px 0px;
+}
+.insurance__info {
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.insurance__text {
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+.insurance__block {
+	display: flex;
+	margin-top: 20px;
+
+}
+.insurance__warranty {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+.insurance__warranty h3 {
+	font-size: 18px;
+	line-height: 16px;
+}
+.insurance__warranty p {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+
+/// Return product 
+.return h2 {
+	font-family: $alumna-font;
+	font-style: 900;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	color:black;
+	margin: 20px 0px;
+} 
+.return i {
+	font-size: 22px;
+}
+.return__info {
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.return__text {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 20px;
+} 
+.return__info ul {
+	margin-left: 20px;
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin-bottom: 20px;
+}
+.return__info li {
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.return__text2 {
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 20px;
+}

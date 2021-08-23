@@ -1,0 +1,89 @@
+// Header Registraton / Authorization window // 
+.entrance__registration {
+	font-family: $alumna-font;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	transform: translate(-50%, -50%);
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 400px;
+	width: 420px;
+	z-index: 4;
+}
+.entrance__registration i {
+	margin-top: 80px;
+}
+.entrance__regtext {
+	margin-top: 40px;
+	font-size: 30px;
+	line-height: 30px;
+} 
+.entrance__registration p {
+	margin-top: 18px;
+	font-size: 12px;
+	line-height: 24px;
+	font-family: $solomonregular-font;
+}
+.registration__button {
+	margin-top: 65px;
+	background-color: black;
+	opacity: 0.8;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	width: 250px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.entrance__authorization {
+	font-family: $alumna-font;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 400px;
+	width: 420px;
+	z-index: 4;
+	display: none;
+}
+.entrance__authorization i {
+	margin-top: 80px;
+}
+.entrance__authorization p {
+	margin-top: 18px;
+	font-size: 12px;
+	line-height: 24px;
+	font-family: $solomonregular-font;
+}
+.entrance__exit {
+	margin-top: 65px;
+	background-color: black;
+	opacity: 0.8;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	width: 250px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	&:hover {
+		opacity: 1;
+	}
+}

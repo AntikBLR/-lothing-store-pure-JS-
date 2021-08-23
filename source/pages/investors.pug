@@ -1,0 +1,29 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	.investor
+		.investor__man
+		.investor__woman
+		.investor__woman2
+		.investor__age 
+		.investor__check 
+		table.investor__table
+			tr
+				th Имя
+				th Компания
+				th Email 
+				th Телефон
+				th Баланс
+				th Дата регистрации
+				th Пол
+				th Возраст
+		button#investor__button Вернуться к началу
+	include footer 
+	script(src="js/investor.js")
+	script(src="js/script.js")
+	script(src="js/basket.js")

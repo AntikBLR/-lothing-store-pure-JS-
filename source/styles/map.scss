@@ -1,0 +1,114 @@
+// Map
+.map {
+	margin: 30px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h1 {
+		font-family: $alumna-font;
+		font-style: 900;
+		font-size: 48px;
+		line-height: 64px;
+		text-align: center;
+		color:black;
+	}
+}
+.map h3 {
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.header__maping {
+	height: 500px;
+	width: 100%;
+}
+.map__payment {
+	font-family: $solomonregular-font;
+}  
+
+.map__payment h2 {
+	margin-top: 20px;
+	font-family: $alumna-font;
+	font-size: 30px;
+	line-height: 31px;
+}  
+.map__payment h3 {
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.map__text  {
+	font-size: 12px;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+// Investor 
+
+.investor {
+	font-family: $solomonregular-font;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.investor__woman {
+	margin-top: 5px;
+}
+.investor__age {
+	margin-top: 5px;
+}
+.investor__check {
+	margin-top: 5px;
+}
+.investor__table {
+	margin-top: 5px;
+}
+#investor__button {
+	margin-top: 30px;
+	background-color: black;
+	opacity: 0.8;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	width: 250px;
+	height: 45px;
+	color: white;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.investor__table {
+	font-size: 14px;
+	border-collapse: collapse;
+	text-align: center;
+	}
+.investor__table th {
+	background: #AFCDE7;
+	color: white;
+	padding: 10px 20px;
+}
+.investor__table td:first-child {
+	background: #AFCDE7;
+	color: white;
+	padding: 10px 20px;
+}
+.investor__table th {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+.investor__table td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+.investor__table th:first-child {
+	text-align: left;
+}
+.investor__table td:first-child {
+	text-align: left;
+}

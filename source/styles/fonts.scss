@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'icomoon';
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/icomoon.ttf');
+}
+
+$icomoon-font: 'icomoon';
+
+@font-face {
+	font-family: 'solomonmedium';
+	font-display: swap;
+	font-style: normal;
+	src: url('../fonts/SolomonMedium.ttf');
+}
+
+$solomonmedium-font: 'solomonmedium';
+
+@font-face {
+	font-family: 'solomonregular';
+	font-display: swap;
+	font-style: normal;
+	src: url('../fonts/SolomonRegular.ttf');
+}
+
+$solomonregular-font: 'solomonregular';
+
+
+@font-face {
+	font-family: 'alumna';
+	font-display: swap;
+	font-style: normal;
+	src: url('../fonts/Alumna.ttf');
+}
+
+$alumna-font: 'alumna';

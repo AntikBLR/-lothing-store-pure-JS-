@@ -1,0 +1,110 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	.container
+		.product Сезонная распродажа
+			.product__block
+				.product__box
+					img(src="../img/image12.png")
+					h3.product__title Футболка "Zero"
+					p
+						| Цена: 
+						span.product_price 41
+						| $
+					button(class="add_item" id="product__buttom" data-id="13") Добавить в корзину
+				.product__box
+					img(src="../img/image11.png")
+					h3.product__title Футболка "One"
+					p
+						| Цена: 
+						span.product_price 11
+						| $
+					button(class="add_item" data-id="14") Добавить в корзину
+				.product__box
+					img(src="../img/image13.png")
+					h3.product__title Футболка "USA"
+					p
+						| Цена: 
+						span.product_price 88
+						| $
+					button(class="add_item" data-id="15") Добавить в корзину
+				.product__box
+					img(src="../img/image14.png")
+					h3.product__title Футболка "GoGo"
+					p
+						| Цена: 
+						span.product_price 52
+						| $
+					button(class="add_item" data-id="16") Добавить в корзину
+				.product__box
+					img(src="../img/image13.png")
+					h3.product__title Футболка "Classic" 
+					p
+						| Цена: 
+						span.product_price 28
+						| $
+					button(class="add_item" data-id="17") Добавить в корзину
+				.product__box
+					img(src="../img/image11.png")
+					h3.product__title Футболка "Wolf"
+					p
+						| Цена: 
+						span.product_price 24
+						| $
+					button(class="add_item" data-id="18") Добавить в корзину
+				.product__box
+					img(src="../img/image12.png")
+					h3.product__title Футболка "Tiger"
+					p
+						| Цена: 
+						span.product_price 37
+						| $
+					button(class="add_item" data-id="19") Добавить в корзину
+				.product__box
+					img(src="../img/image13.png")
+					h3.product__title Футболка "vanSI"
+					p
+						| Цена: 
+						span.product_price 67
+						| $
+					button(class="add_item" data-id="20") Добавить в корзину
+				.product__box
+					img(src="../img/image14.png")
+					h3.product__title Футболка "GeoG"
+					p
+						| Цена: 
+						span.product_price 36
+						| $
+					button(class="add_item" data-id="21") Добавить в корзину
+				.product__box
+					img(src="../img/image13.png")
+					h3.product__title Футболка "Max" 
+					p
+						| Цена: 
+						span.product_price 18
+						| $
+					button(class="add_item" data-id="22") Добавить в корзину
+				.product__box
+					img(src="../img/image11.png")
+					h3.product__title Футболка "XXX"
+					p
+						| Цена: 
+						span.product_price 34
+						| $
+					button(class="add_item" data-id="23") Добавить в корзину
+				.product__box
+					img(src="../img/image12.png")
+					h3.product__title Футболка "NET"
+					p
+						| Цена: 
+						span.product_price 55
+						| $
+					button(class="add_item" data-id="24") Добавить в корзину
+	include footer 
+	script(src="js/basket.js")
+	script(src="js/script.js")

@@ -1,0 +1,20 @@
+include components/mixins
+include components/doctype
+
+mixin imagesMixinInFile(id, name)
+	img(src='img/' + id + '.' + name)
+
+body
+	include header 
+	include header_logo
+	include section1
+	include section2
+	include sectionbig
+	include section3
+	include section4
+	include section5
+	include footer 
+	script(src="js/cookie.js")
+	script(src="js/header.js")
+	script(src="js/script.js")
+	script(src="js/basket.js")
